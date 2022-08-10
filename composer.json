@@ -1,5 +1,5 @@
 {
-    "name": "fabio3268/acme-manha",
+    "name": "fabio3268/acme-tarde",
     "description": "Estrutura básica de uma aplicação MVC",
     "minimum-stability": "stable",
     "authors": [
@@ -24,6 +24,7 @@
     },
     "require": {
       "dompdf/dompdf": "^2.0",
-      "coffeecode/router": "1.0.8"
+      "coffeecode/router": "1.0.8",
+      "league/plates": "v3.4.0"
     }
   }
