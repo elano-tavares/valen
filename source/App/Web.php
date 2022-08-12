@@ -19,18 +19,25 @@ class Web
     {
          //require __DIR__ . "/../../themes/web/home.php";
 
-        $user = new User(2);
+        $user = new User(20);
         $user->findById();
 
-        echo $this->view->render(
-            "home",[
-                "user" => $user
-            ]);
+        echo $this->view->render("home",["user" => $user]);
     }
 
     public function about() : void
     {
-        echo $this->view->render("about"); // Engine
+        echo $this->view->render("about",
+            [
+                "name" => "Fábio Santos",
+                "age" => 46
+            ]); // Engine
+    }
+
+    public function localization()
+    {
+        //echo "Localização";
+        echo $this->view->render("localization"); // Engine
     }
 
     public function contact(array $data) : void

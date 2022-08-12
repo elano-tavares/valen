@@ -12,16 +12,16 @@
 <body>
 <nav>
     <?php
-        if($this->section("sidebar")){
-            echo $this->section("sidebar");
-        } else {
+//        if($this->section("sidebar")){
+//            echo $this->section("sidebar");
+//        } else {
     ?>
             <a title="" href="<?= url() ?>">Home</a>
             <a title="" href="<?= url("sobre") ?>">Sobre</a>
             <a title="" href="<?= url("contato") ?>">Contato</a>
             <a title="" href="<?= url("testeErro") ?>">Teste de Erro</a>
     <?php
-        }
+//        }
     ?>
 </nav>
 <main>
