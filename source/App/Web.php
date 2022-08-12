@@ -17,7 +17,7 @@ class Web
 
     public function home() : void
     {
-        // require __DIR__ . "/../../themes/web/home.php";
+         //require __DIR__ . "/../../themes/web/home.php";
 
         $user = new User(2);
         $user->findById();
@@ -30,12 +30,12 @@ class Web
 
     public function about() : void
     {
-        echo $this->view->render("about");
+        echo $this->view->render("about"); // Engine
     }
 
     public function contact(array $data) : void
     {
-        var_dump($data);
+        //var_dump($data);
         echo $this->view->render("contact");
     }
 
