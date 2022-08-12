@@ -12,8 +12,8 @@ define("CONF_DB_NAME", "bd-mocitec-manha-tarde"); // aqui deve ser alterado para
 
 // PROJECT URLs
 
-define("CONF_URL_BASE", "https://www.localhost/acme-manha"); // depois da / deve vir o nome da pasta do trabalho
-define("CONF_URL_TEST", "https://www.localhost/acme-manha"); // depois da / deve vir o nome da pasta do trabalho
+define("CONF_URL_BASE", "http://www.localhost/acme-manha"); // depois da / deve vir o nome da pasta do trabalho
+define("CONF_URL_TEST", "http://www.localhost/acme-manha"); // depois da / deve vir o nome da pasta do trabalho
 
 // VIEW
 
