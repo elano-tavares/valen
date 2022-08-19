@@ -12,7 +12,6 @@ class Web
     public function __construct()
     {
         $this->view = new Engine(CONF_VIEW_WEB,'php');
-        //$this->view = new Engine(__DIR__ . "/../../themes/web",'php');
     }
 
     public function home() : void
