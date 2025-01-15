@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.:: Área Administrativa ::.</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/adm/css/styles.css'>
-    <script src='assets/adm/scripts/scripts.js' async></script>
-</head>
-<body>
-    <h1>Home da Aplicação dos Administradores do sistema...</h1>
-    <?php
-      echo __DIR__;
-    ?>
-</body>
-</html>
+<?php
+$this->layout("_theme");
+?>
+
+<div class="">
+<h1 class="text-center"><b>--<?= $_SESSION["client"]["name"] ?>--</b></h1>
+<h2 class="text-center"><b>ID:</b> <?= $_SESSION["client"]["id"] ?></h2>
+<h2 class="text-center"><b>CNPJ:</b> <?= $_SESSION["client"]["cnpj"] ?></h2>
+<h2 class="text-center"><b>ESTADO:</b> <?= $_SESSION["client"]["state"] ?></h2>
+<h2 class="text-center"><b>NAÇÃO:</b> <?= $_SESSION["client"]["nation"] ?></h2>
+</div>

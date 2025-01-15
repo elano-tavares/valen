@@ -55,16 +55,19 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="<?= url(""); ?>">Página Inicial</a>
+                                 <a class="nav-link" href="<?= url("adm/"); ?>">Informações Gerais</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("sobre"); ?>">Sobre</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("contato"); ?>">Contato</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("perguntas-frequentes"); ?>">Faq</a>
+                              <div class="btn-group ml-4">
+                              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Editar
+                                 </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="<?= url("adm/apagar-usuario"); ?>">Deletar Usuário</a>
+                                    <a class="dropdown-item" href="<?= url("adm/novo-arquivo"); ?>">Inserir Arquvivo</a>
+                                    <a class="dropdown-item" href="<?= url("adm/apagar-arquivo"); ?>">Deletar Arquivo</a>
+                                 </div>
+                                 </div>
                               </li>
                            </ul>
                         </div>
@@ -76,9 +79,7 @@
                            <span class="sr-only">Dropleft</span>
                         </button>
                         <div class="dropdown-menu">
-                           <a class="dropdown-item text-dark" href="<?= url("entrar"); ?>">Entrar</a>
-                           <a class="dropdown-item text-dark" href="<?= url("registrar"); ?>">Registrar</a>
-                           <a class="dropdown-item text-dark" href="<?= url("entrar-adm"); ?>">Admin</a>
+                           <a class="dropdown-item text-dark" href="<?= url("adm/sair"); ?>">Sair</a>
                         </div>
                      </div>
                      <button type="button" class="btn btn-warning">

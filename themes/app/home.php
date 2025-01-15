@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.:: APP do Usuário ::.</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/app/css/styles.css'>
-    <script src='assets/app/scripts/scripts.js' async></script>
-</head>
-<body>
-    <h1>Home do APP do usuário</h1>
-    <?php
-    echo __DIR__;
-    ?>
-</body>
-</html>
+<?php 
+$this->layout("_theme");
+?>
+
+<h1 class="text-center"> Seja Bem-Vindo, <?= $user->getName(); ?> da <?= $client_Name->name; ?>!<br> Conheça abaixo todos os usuários do nosso Sitema.</h1> 
+
+<?php
+
+foreach($clients_All as $client){
+
+?>
+
+<div class="card text-center">
+  <div class="card-header">
+    <?= $client->name; ?>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><?= $client->state; ?> <br> <?= $client->nation; ?></h5>
+    <p class="card-text"><?= $client->description; ?></p> 
+    <br> 
+    <a href="<?= $client->link; ?>" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+
+<?php
+}
+?>

@@ -43,7 +43,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
                      <div class="full">
                         <div class="logo">
-                           <a href="<?= url(""); ?>"><img src="<?= url("assets/web/"); ?>images/logo_1.png" alt="#" /></a>
+                           <a href="<?= url("app/"); ?>"><img src="<?= url("assets/web/"); ?>images/logo_1.png" alt="#" /></a>
                         </div>
                      </div>
                   </div>
@@ -54,17 +54,14 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="<?= url(""); ?>">Página Inicial</a>
+                              <li class="nav-item">
+                                 <a href="<?= url("app/") ?>" class="nav-link">Página Inicial</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("sobre"); ?>">Sobre</a>
+                                 <a href="<?= url("app/arquivos") ?>" class="nav-link">Arquivos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("contato"); ?>">Contato</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("perguntas-frequentes"); ?>">Faq</a>
+                                 <a href="<?= url("app/notas") ?>" class="nav-link">Notas</a>
                               </li>
                            </ul>
                         </div>
@@ -76,21 +73,20 @@
                            <span class="sr-only">Dropleft</span>
                         </button>
                         <div class="dropdown-menu">
-                           <a class="dropdown-item text-dark" href="<?= url("entrar"); ?>">Entrar</a>
-                           <a class="dropdown-item text-dark" href="<?= url("registrar"); ?>">Registrar</a>
-                           <a class="dropdown-item text-dark" href="<?= url("entrar-adm"); ?>">Admin</a>
+                           <a class="dropdown-item text-dark" href="<?= url("app/perfil"); ?>">Perfil</a>
+                           <a class="dropdown-item text-dark" href="<?= url("app/sair"); ?>">Sair</a>
                         </div>
                      </div>
                      <button type="button" class="btn btn-warning">
-                     <a href="<?= url("entrar"); ?>"><i class="fa fa-user" aria-hidden="true"></i></a>
+                     <a href="<?= url("app/perfil"); ?>"><i class="fa fa-user" aria-hidden="true"></i></a>
                      </button>
                      </div>
-                  </div>
                   </div>
                </div>
             </div>
          </div>
-      </header>
+      </div>
+   </header>
       <!-- end header inner -->
       <!-- end header -->
 
@@ -102,14 +98,14 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-5">
-                     <a class="logo2" href="<?= url("") ?>"><img src="<?= url("assets/web/"); ?>images/logo_2.png" alt="#"/></a>
+                     <a class="logo2" href="<?= url("pagina-inicial") ?>"><img src="<?= url("assets/web/"); ?>images/logo_2.png" alt="#"/></a>
                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it  </p>
                   </div>
                   <div class="col-md-3">
                      <div class="fid_box">
                         <h3>Links Úteis</h3>
                         <ul class="use_link">
-                           <li class="active"><a  href="<?= url(""); ?>">Página Principal</a></li>
+                           <li class="active"><a  href="<?= url("pagina-inicial"); ?>">Página Principal</a></li>
                            <li><a href="<?= url("sobre"); ?>">Sobre</a></li>
                            <li><a href="<?= url("contato"); ?>">Contato</a></li>
                         </ul>

@@ -29,11 +29,11 @@
    </head>
    <!-- body -->
    <body class="main-layout">
-      <!-- loader  -->
+      <!-- loader  
       <div class="loader_bg">
-         <div class="loader"><img src="<?= url("assets/web/"); ?>images/loading.gif" alt="#" /></div>
+          <div class="loader"><img src="<?= url("assets/web/"); ?>images/loading.gif" alt="#" /></div>
       </div>
-      <!-- end loader -->
+      end loader -->
       <!-- header -->
       <header>
          <!-- header inner -->
@@ -55,16 +55,23 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="<?= url(""); ?>">Página Inicial</a>
+                                 <a class="nav-link" href="<?= url("adm-super/"); ?>">Informações Gerais</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("sobre"); ?>">Sobre</a>
+                                 <a class="nav-link" href="<?= url("adm-super/relatorio"); ?>">Relatório</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("contato"); ?>">Contato</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="<?= url("perguntas-frequentes"); ?>">Faq</a>
+                              <div class="btn-group ml-4">
+                              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Editar
+                                 </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="<?= url("adm-super/novo-cliente"); ?>">Inserir Cliente</a>
+                                    <a class="dropdown-item" href="<?= url("adm-super/apagar-cliente"); ?>">Deletar Cliente</a>
+                                    <a class="dropdown-item" href="<?= url("adm-super/novo-faq"); ?>">Inserir FAQ</a>
+                                    <a class="dropdown-item" href="<?= url("adm-super/apagar-faq"); ?>">Deletar FAQ</a>
+                                 </div>
+                                 </div>
                               </li>
                            </ul>
                         </div>
@@ -76,13 +83,11 @@
                            <span class="sr-only">Dropleft</span>
                         </button>
                         <div class="dropdown-menu">
-                           <a class="dropdown-item text-dark" href="<?= url("entrar"); ?>">Entrar</a>
-                           <a class="dropdown-item text-dark" href="<?= url("registrar"); ?>">Registrar</a>
-                           <a class="dropdown-item text-dark" href="<?= url("entrar-adm"); ?>">Admin</a>
+                           <a class="dropdown-item text-dark" href="<?= url("adm/sair"); ?>">Sair</a>
                         </div>
                      </div>
                      <button type="button" class="btn btn-warning">
-                     <a href="<?= url("entrar"); ?>"><i class="fa fa-user" aria-hidden="true"></i></a>
+                     <a><i class="fa fa-user" aria-hidden="true"></i></a>
                      </button>
                      </div>
                   </div>

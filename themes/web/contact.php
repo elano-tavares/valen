@@ -1,57 +1,53 @@
 <?php
 $this->layout("_theme");
 ?>
-<!--================================
-=            Page Title            =
-=================================-->
 
-<section class="page-title bg-title overlay-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="title">
-                    <h3>Contact Us</h3>
-                </div>
-                <ol class="breadcrumb p-0 m-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Contact Us</li>
-                </ol>
+<div class="yellow_bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2><img src="<?= url("assets/web/"); ?>images/heading_iconw.png" alt="#"/>Contato</h2>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!--====  End of Page Title  ====-->
-
-
-
-
-<section class="section contact-form">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title">
-                    <h3>Get in <span class="alternate">Touch</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, velit.</p>
-                </div>
+         </div>
+      </div>
+      <!-- contact section -->
+      <div id="contact" class="contact">
+         <div class="con_bg">
+            <div class="container-fluid">
+               <div class="row ">
+                  <div class="col-md-6">
+                     <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Nome" type="type" name="Name"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Número de Telefone" type="type" name="Phone Number"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Email" type="type" name="Email">                          
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactusmess" placeholder="Mensagem" type="type" Message="Name">
+                           </div>
+                           <div class="col-md-12">
+                              <button class="send_btn">Enviar</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-6 padding_right2">
+                     <div class="map_section">
+                        <div id="map">
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <form action="#" class="row">
-            <div class="col-md-6">
-                <input type="text" class="form-control main" name="name" id="name" placeholder="Name">
-            </div>
-            <div class="col-md-6">
-                <input type="email" class="form-control main" name="email" id="email" placeholder="Email">
-            </div>
-            <div class="col-md-12">
-                <input type="text" class="form-control main" name="phone" id="phone" placeholder="Phone">
-            </div>
-            <div class="col-md-12">
-                <textarea name="message" id="message" class="form-control main" rows="10" placeholder="Your Message"></textarea>
-            </div>
-            <div class="col-12 text-center">
-                <button type="submit" class="btn btn-main-md">Send Message</button>
-            </div>
-        </form>
-    </div>
-</section>
+         </div>
+      </div>
+      <br><br>
+      <!-- end contact section -->
